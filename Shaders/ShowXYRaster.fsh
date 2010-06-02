@@ -17,6 +17,9 @@ void main() {
 	gl_FragColor.b = 0.0;
 	gl_FragColor.a = 1.0;	
 
+	// gl_FragCoord is in view coordinates:
+	// 0 <= gl_FragCoord.x < view.bounds.size.width
+	// 0 <= gl_FragCoord.y < view.bounds.size.height
 	
 	// Visualize the x-y window coordinates
 //	if (gl_FragCoord.x < 768.0 / 2.0) {
